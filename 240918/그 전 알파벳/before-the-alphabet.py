@@ -1,4 +1,7 @@
 def min_shift_to_match(A, B):
+    if len(A) != len(B):
+        return -1
+    
     len_a = len(A)
 
     for n in range(1, len_a + 1):
