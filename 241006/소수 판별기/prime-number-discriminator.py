@@ -1,14 +1,13 @@
+import math
 n= int(input())
-check=0
-for i in range(2,n+1):
+prime=True
+for i in range(2, int(math.sqrt(n)) + 1):
     if n%i==0:
-        check=1
+        is_prime = False
         break
-    else:
-        check=0
       
         
-if check==1:
+if prime and n > 1: 
     print("P")
-else :
+else:
     print("C")
